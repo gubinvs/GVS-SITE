@@ -1,0 +1,21 @@
+//- Подключил шаблон с разметкой страницы
+extends doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Описание страницы в head discription
+    - var contentDiscription = 'Я помогаю делать бизнес организованным и эффективным, бережно использовать ресурсы, выявлять и устранять потери.';
+    //- Наименование главной страницы
+    - var titleName = 'ИП Губин Владимир Сергеевич - системный интегратор бизнес-процессов';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = [];
+
+
+//- Вставил блок с будующим контентом
+block content
+    main
+        h1(class="visually-hidden h1-visually", style="visibility: hidden;").h1__visually ИП Губин Владимир Сергеевич
+        include html/main-section.pug
+        include html/about-section.pug
+                
+
