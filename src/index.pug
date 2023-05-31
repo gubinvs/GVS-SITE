@@ -9,6 +9,8 @@ block doctype
     - var titleName = 'ИП Губин Владимир Сергеевич - системный интегратор бизнес-процессов';
     //- Массив с путями к файлам со стилями
     - var stylePath = [];
+    //-- canonical указывает поисковому роботу какая страница из дублей главная
+    - var canonical = 'https://gubinvs.ru/index.html';
 
 
 //- Вставил блок с будующим контентом
@@ -17,5 +19,6 @@ block content
         h1(class="visually-hidden h1-visually", style="visibility: hidden;").h1__visually ИП Губин Владимир Сергеевич
         include html/main-section.pug
         include html/about-section.pug
+                
                 
 

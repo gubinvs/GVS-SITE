@@ -2,6 +2,7 @@ block doctype
     - var stylePath = [];
     - var titleName;
     - var contentDiscription;
+    - var canonical;
 
 doctype html
 html(lang='ru')
@@ -12,6 +13,7 @@ html(lang='ru')
         meta(name="description", content=contentDiscription)
         link(rel="icon", href="https://gubinvs.ru/favicon.svg", type="image/svg+xml")
         link(rel='stylesheet', href='css/style.css')
+        link(rel="canonical", href=canonical)
         each val in stylePath
             link(rel='stylesheet', href=val)
         else
